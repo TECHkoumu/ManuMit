@@ -9,8 +9,8 @@ class User < ApplicationRecord
   # belongs_to :position, default: -> { Position.find_by(id: 1) }
        
   validates :name, presence: true
-  validates :department_id, presence: true, numericality: { other_than: 1, message: "can't be blank" }
-  validates :position_id, presence: true, numericality: { other_than: 1, message: "can't be blank" }
+  # validates :department_id, presence: true, numericality: { other_than: 1, message: "can't be blank" }
+  # validates :position_id, presence: true, numericality: { other_than: 1, message: "can't be blank" }
        
   has_many :manuals
   has_many :comments
